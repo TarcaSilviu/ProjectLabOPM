@@ -39,7 +39,7 @@ public class main {
                     "|     ||  .  \\|     ||  |  |  |  |  |  |\n" +
                     "|___,_||__|\\_||_____||__|__|  |__|  |__|");
 
-            System.out.println("\n How many players?(Maximum of 4!)");
+            System.out.println("\n How many players?\n1. players\n2. players\n3. players\n4. players");
             int players = 0;
             players=sc.nextInt();
             if (players > 4 || players < 0) {
