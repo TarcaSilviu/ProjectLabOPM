@@ -8,6 +8,13 @@ public class main {
         Scanner sc = new Scanner(System.in);
         Random random=new Random();
         int nrnreader;
+        System.out.println(" __    __    ___  _        __   ___   ___ ___    ___  __ \n" +
+                "|  |__|  |  /  _]| |      /  ] /   \\ |   |   |  /  _]|  |\n" +
+                "|  |  |  | /  [_ | |     /  / |     || _   _ | /  [_ |  |\n" +
+                "|  |  |  ||    _]| |___ /  /  |  O  ||  \\_/  ||    _]|__|\n" +
+                "|  `  '  ||   [_ |     /   \\_ |     ||   |   ||   [_  __ \n" +
+                " \\      / |     ||     \\     ||     ||   |   ||     ||  |\n" +
+                "  \\_/\\_/  |_____||_____|\\____| \\___/ |___|___||_____||__|");
             System.out.println(
                 " _______  _______  __    _  _______  ___   __    _  __   __  _______  ______  \n" +
                         "|       ||       ||  |  | ||       ||   | |  |  | ||  | |  ||       ||      | \n" +
@@ -39,7 +46,7 @@ public class main {
                     "|     ||  .  \\|     ||  |  |  |  |  |  |\n" +
                     "|___,_||__|\\_||_____||__|__|  |__|  |__|");
 
-            System.out.println("\n How many players?\n1. players\n2. players\n3. players\n4. players");
+            System.out.println("\n How many players?\n1 players\n2 players\n3 players\n4 players");
             int players = 0;
             players=sc.nextInt();
             if (players > 4 || players < 0) {
@@ -89,6 +96,7 @@ public class main {
                     break;
 
             }
+            System.out.println("\nTis is version 0.00001.,bugs fixing and more options come in the next patch!");
         }
         else{
             System.out.println("You haven't chose correctly!");

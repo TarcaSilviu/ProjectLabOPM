@@ -22,7 +22,7 @@ public class Trivia {
             case 0:
                 System.out.println("History: ");
                 switch (c_randomizer) {
-                    case 0:System.out.println("In what year was King Mihai I born?a)1920 b)1915 \nc)1919 d)Year 1921");
+                    case 0:System.out.println("In what year was King Mihai I born?\na)1920 b)1915 \nc)1919 d)Year 1921");
                         scan=sc.next();
                         if(d.equalsIgnoreCase(scan)){
                             player.scoreIncrease(this.alocated_points);
@@ -44,7 +44,7 @@ public class Trivia {
                             System.out.println("The answer is wrong!Minus "+this.deducted_points+" points!");
                         }
                         break;
-                    case 2:System.out.println("In what country was Adolf Hitler born?a)Switzerland b)Germany\nc)Austria d)Poland");
+                    case 2:System.out.println("In what country was Adolf Hitler born?\na)Switzerland b)Germany\nc)Austria d)Poland");
                         scan=sc.next();
                         if(c.equalsIgnoreCase(scan)){
                             player.scoreIncrease(this.alocated_points);
@@ -55,7 +55,7 @@ public class Trivia {
                             System.out.println("The answer is wrong!Minus "+this.deducted_points+" points!");
                         }
                         break;
-                    case 3:System.out.println("In which city were the Ceausescus executed?a)Bucuresti b)Târgoviste\nc)Iasi d)Constanta");
+                    case 3:System.out.println("In which city were the Ceausescus executed?\na)Bucuresti b)Târgoviste\nc)Iasi d)Constanta");
                         scan=sc.next();
                         if(b.equalsIgnoreCase(scan)){
                             player.scoreIncrease(this.alocated_points);
@@ -219,7 +219,7 @@ public class Trivia {
                     break;
                     case 7:System.out.println("How many hairs are on a typical human head?\na)1milion b)10 milion\nc)100thousands d)10,000 hair");
                         scan=sc.next();
-                        if(d.equalsIgnoreCase(scan){
+                        if(d.equalsIgnoreCase(scan)){
                             player.scoreIncrease(this.alocated_points);
                             System.out.println("Plus "+this.alocated_points+" points!");
                         }
