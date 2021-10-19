@@ -1,4 +1,12 @@
-import javax.lang.model.type.NullType;
+import App.Interfaces.GUIFrame;
+import App.Interfaces.StartFrame;
+import App.MiniGames.Trivia;
+import App.MiniGames.TriviaGames;
+import App.MiniGames.TrueFalse;
+import App.Player.Player;
+import App.Player.PlayerBoard;
+
+import javax.swing.*;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 import java.util.Random;
@@ -6,9 +14,15 @@ import java.util.Random;
 public class main {
     public static void main(String[] args) throws InterruptedException {
         Scanner sc = new Scanner(System.in);
-        Random random=new Random();
+        Random random = new Random();
         int nrnreader;
-        System.out.println(" __    __    ___  _        __   ___   ___ ___    ___  __ \n" +
+
+        JFrame frame = new JFrame("GUI");
+        frame.setContentPane(new GUIFrame().UI);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+        /*System.out.println(" __    __    ___  _        __   ___   ___ ___    ___  __ \n" +
                 "|  |__|  |  /  _]| |      /  ] /   \\ |   |   |  /  _]|  |\n" +
                 "|  |  |  | /  [_ | |     /  / |     || _   _ | /  [_ |  |\n" +
                 "|  |  |  ||    _]| |___ /  /  |  O  ||  \\_/  ||    _]|__|\n" +
@@ -46,7 +60,7 @@ public class main {
                     "|     ||  .  \\|     ||  |  |  |  |  |  |\n" +
                     "|___,_||__|\\_||_____||__|__|  |__|  |__|");
 
-            System.out.println("\n How many players?\n1 players\n2 players\n3 players\n4 players");
+            System.out.println("\n How many players?\n1 player\n2 players\n3 players\n4 players");
             int players = 0;
             players=sc.nextInt();
             if (players > 4 || players < 0) {
@@ -75,31 +89,36 @@ public class main {
                     break;
                 case 2:
                     PlayerBoard playerboard=new PlayerBoard(2);
-                    System.out.println("What do you wish to play?\n1.Trivia\n2.True or false");
+                    System.out.println("What do you wish to play?\n1.App.MiniGames.Trivia\n2.True or false");
                     TimeUnit.SECONDS.sleep(5);
                     nrnreader=sc.nextInt();
                     playerboard.multiplePlayersGame(nrnreader);
               break;
               case 3:
                   PlayerBoard playerboard1=new PlayerBoard(3);
-                  System.out.println("What do you wish to play?\n1.Trivia\n2.True or false");
+                  System.out.println("What do you wish to play?\n1.App.MiniGames.Trivia\n2.True or false");
                   TimeUnit.SECONDS.sleep(5);
                   nrnreader=sc.nextInt();
                   playerboard1.multiplePlayersGame(nrnreader);
                      break;
                 case 4:
                   PlayerBoard playerboard2=new PlayerBoard(4);
-                    System.out.println("What do you wish to play?\n1.Trivia\n2.True or false");
+                    System.out.println("What do you wish to play?\n1.App.MiniGames.Trivia\n2.True or false");
                     TimeUnit.SECONDS.sleep(5);
                     nrnreader=sc.nextInt();
                     playerboard2.multiplePlayersGame(nrnreader);
                     break;
 
             }
-            System.out.println("\nTis is version 0.00001.,bugs fixing and more options come in the next patch!");
+            System.out.println("\nThis is version 0.00001.,bugs fixing and more options come in the next patch!");
         }
         else{
             System.out.println("You haven't chose correctly!");
         }
+    }*/
     }
 }
+/*ToDo list :
+   -add a play again function.
+    -add a new minigame Closest to the answer.
+*/

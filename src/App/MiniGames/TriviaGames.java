@@ -1,4 +1,9 @@
+package App.MiniGames;
+
+import App.Player.Player;
+
 import java.util.Random;
+
 public class TriviaGames{
     private int type;
     private int number_of_players;
@@ -28,7 +33,7 @@ public class TriviaGames{
         truefalse=new TrueFalse(10,5);
     }
     //starts the trivia game:
-    public void triviaStarter(Player player1,Trivia trivia){
+    public void triviaStarter(Player player1, Trivia trivia){
         Random q_randomizer=new Random();
         Random c_randomizer=new Random();
 
@@ -51,7 +56,7 @@ public class TriviaGames{
         }
     }
 
-    public void trueOrFalseStarter(Player player1,TrueFalse truefalse){
+    public void trueOrFalseStarter(Player player1, TrueFalse truefalse){
 
         Random q_randomizer=new Random();
         Random c_randomizer=new Random();
@@ -73,18 +78,18 @@ public class TriviaGames{
             truefalse.trueOrFalse(rand_value,rand_value2,player1);
             this.repeatcheck[rand_value][rand_value2]=1;}
     }
-    public void repeater(Player player1,Trivia trivia) {
+    public void repeater(Player player1, Trivia trivia) {
         for (int i = 0; i<5; ++i) {
             triviaStarter(player1, trivia);
         }
     }
-    public void repeater2(Player player1,TrueFalse truefalse){
+    public void repeater2(Player player1, TrueFalse truefalse){
         for(int i=0;i<5;++i) {
             trueOrFalseStarter(player1,truefalse);
         }
     }
     //alege ce minigame va incepe
-    public void gameTypeStarter(Player player1,Trivia trivia,TrueFalse truefalse){
+    public void gameTypeStarter(Player player1, Trivia trivia, TrueFalse truefalse){
         //triviaInit(trivia);
         //trueFalseInit(truefalse);
         switch(this.number_of_players){

@@ -1,5 +1,8 @@
+package App.Player;
+
 import java.util.Scanner;
 import java.util.Arrays;
+import App.MiniGames.*;
 public class PlayerBoard {
     private int number_of_players;
     public Player[] players ;

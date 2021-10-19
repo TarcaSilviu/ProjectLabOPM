@@ -1,4 +1,6 @@
-public class Player {
+package App.Player;
+import App.Interfaces.PlayerItnerface;
+public class Player implements PlayerItnerface{
     private String name;
     private int score;
     private boolean loser;
